@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+void check(){
+    int n, x;
+    cin >> n >> x;
+    int a[n];
+    int kq = -1;
+    for(int i = 0; i < n; i++){
+        cin >> a[i];
+    }
+    for(int i = 0; i < n; i++){
+        if(a[i] == x){
+            kq = i;
+            cout << kq + 1 << endl;
+            return;
+        }
+    }
+    cout << kq << endl;
+}
+
+
+int main(){
+    int t;
+    cin >> t;
+    while(t--){
+        check();
+    }
+}

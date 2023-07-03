@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+	ifstream IP("VANBAN.in");
+	string s;
+	set<string> se;
+	while(IP >> s){
+		for(int i = 0; i < s.size(); i++){
+			s[i] = tolower(s[i]);
+		}
+		se.insert(s);
+	}
+	for(auto x : se){
+		cout << x << endl;
+	}
+	return 0;
+}
